@@ -1,0 +1,22 @@
+---
+  path: outside
+  title: Buiten
+  icon: mdi:nature-people
+  cards:
+    - type: glance
+      entities:
+        - entity: sensor.yr_weather_symbol
+    - type: custom:weather-card
+      entity: weather.voorschoten
+      icons: "/hacsfiles/weather-card/icons/"
+      details: true
+      forecast: true
+    - type: picture-entity
+      state_filter: []
+      entity: camera.buienradar_loop
+
+
+  
+  
+  
+  

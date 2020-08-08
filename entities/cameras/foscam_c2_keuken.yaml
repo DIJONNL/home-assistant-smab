@@ -1,0 +1,5 @@
+platform: foscam
+name: camera_foscam_keuken
+ip: !secret foscam_ip_keuken
+username: !secret foscam_username
+password: !secret foscam_password

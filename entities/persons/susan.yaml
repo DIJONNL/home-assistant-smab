@@ -1,0 +1,6 @@
+---
+name: Susan
+id: susan
+user_id: !secret user_id_susan
+device_trackers:
+  - device_tracker.iphone_2

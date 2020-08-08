@@ -1,0 +1,8 @@
+platform: yr
+name: YR_Weather
+forecast: 2
+monitored_conditions:
+  - temperature
+  - symbol
+  - precipitation
+  - humidity

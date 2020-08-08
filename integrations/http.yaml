@@ -1,0 +1,8 @@
+http:
+  # Sets a port number to use for Home Assistant to use (default 8123).
+  server_port: 8123
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+  
+  ip_ban_enabled: false
+  login_attempts_threshold: 5

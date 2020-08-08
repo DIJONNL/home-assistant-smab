@@ -1,0 +1,29 @@
+---
+#
+# When nobody is at home make sure that:
+#
+# 1. The Media Player is disabled 
+# 2. Turn of the Ventilator on the Bathroom
+# 
+#
+# 
+description: Notification in case nobody is at home
+alias: people_not_at_home
+trigger:
+  - platform: state
+    entity_id: binary_sensor.people_home
+  - platform: homeassistant
+    event: start
+  - platform: event
+    event_type: automation_reloaded
+action:
+  choose:
+    - conditions:
+        - condition: state
+          entity_id: binary_sensor.people_home
+          state: 'off'
+      sequence:
+        - service: notify.all_devices
+          data_template:
+            title: "People Not@Home"
+            message: "Nobody@home {{ states('sensor.date_time') }}"
