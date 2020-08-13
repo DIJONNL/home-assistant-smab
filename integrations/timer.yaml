@@ -7,4 +7,4 @@
 timer:
   zigbee_permit_join:
     name: Time remaining
-    duration: 120
+    duration: 600

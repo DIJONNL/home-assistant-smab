@@ -1,5 +1,5 @@
 name: all_devices
 platform: group
 services:
-  - service: mobile_app_iphone_van_susan
-  - service: mobile_app_iphone_van_meindert
+  - service: mobile_app_iphone
+  - service: mobile_app_iphone_susan

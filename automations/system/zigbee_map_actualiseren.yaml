@@ -1,0 +1,12 @@
+---
+#
+#
+# https://community.home-assistant.io/t/zigbee2mqtt-show-the-networkmap-in-home-assistant/89116
+# 
+alias: zigbee_map_actualiseren
+trigger:
+  platform: time_pattern
+  minutes: '/59'
+  seconds: 00
+action:
+  - service: zigbee2mqtt_networkmap.update

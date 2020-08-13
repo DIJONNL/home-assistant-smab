@@ -1,0 +1,5 @@
+---
+house_silent_hours_start:
+  name: House Silent Hours Start
+  has_date: false
+  has_time: true

@@ -1,0 +1,32 @@
+---
+  path: automation
+  title: Automation
+  icon: mdi:home-automation
+  cards:
+    - type: vertical-stack
+      cards:
+        - type: entities
+          title: Others
+          show_header_toggle: false
+          entities:
+              - automation.people_not_at_home
+              - automation.woonkamer_light
+    - type: entities
+      entities:
+        - automation.zigbee2mqtt_log_level
+        - automation.zigbee_join_enabled
+        - automation.zigbee_join_disabled
+        - automation.zigbee_map_actualiseren
+        - entity: input_boolean.zigbee_permit_join
+        - entity: timer.zigbee_permit_join
+        - entity: sensor.zigbee2mqtt_bridge_state
+      show_header_toggle: false
+      title: Zigbee
+    - type: vertical-stack
+      cards:
+        - type: entities
+          title: System
+          show_header_toggle: false
+          entities:
+              - entity: input_datetime.house_silent_hours_start
+              - entity: input_datetime.house_silent_hours_end

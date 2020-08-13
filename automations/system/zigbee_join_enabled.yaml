@@ -1,0 +1,16 @@
+---
+#
+#
+#
+# https://www.zigbee2mqtt.io/integration/home_assistant.html
+#
+# Automation to start timer when enable join is turned on
+id: zigbee_join_enabled
+alias: Zigbee Join Enabled
+trigger:
+  - platform: state
+    entity_id: input_boolean.zigbee_permit_join
+    to: "on"
+action:
+  - service: timer.start
+    entity_id: timer.zigbee_permit_join

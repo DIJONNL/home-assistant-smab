@@ -40,6 +40,16 @@ cards:
         entities:
             - person.meindert
             - person.susan
+  - type: custom:vertical-stack-in-card
+    title: Lichten
+    cards:
+        - type: horizontal-stack
+          cards:
+          - type: light
+            entity: light.0x90fd9ffffe0d5953_light
+            show_state: false
+            show_name: true
+            show_label: true 
   - type: horizontal-stack
     cards:
       - type: picture-entity
@@ -47,10 +57,3 @@ cards:
         camera_view: live
         show_info: false
         show_state: false
-  - type: custom:vertical-stack-in-card
-    title: Weather
-    cards:
-        - type: custom:weather-card
-          entity: weather.voorschoten
-          icons: "/hacsfiles/weather-card/icons/"
-          details: false
