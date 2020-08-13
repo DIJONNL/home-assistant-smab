@@ -14,7 +14,11 @@ appdaemon/apps/controllerx/
 appdaemon/apps/__pycache__
 appdaemon/log/
 *google_translate.mp3
-www/community/**
+www/community/custom-header
+www/community/lovelace-auto-entities
+www/community/mini-media-player
+www/community/vertical-stack-in-card
+www/community/weather-card
 www/cam_captures/**
 netdaemon/apps/**
 *.pyc
